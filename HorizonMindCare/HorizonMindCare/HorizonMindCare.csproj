@@ -175,6 +175,15 @@
     <Content Include="Content\img\testimonial\testimonial-bg.jpg" />
     <Content Include="Content\img\top-logo.png" />
     <Content Include="Global.asax" />
+    <Content Include="Images\Academic.jpg" />
+    <Content Include="Images\addictions.jpg" />
+    <Content Include="Images\child.jpg" />
+    <Content Include="Images\memory-loss.jpg" />
+    <Content Include="Images\sexual-dysfunction-28888739.jpg" />
+    <Content Include="Images\stress in realtion.jpg" />
+    <Content Include="Images\Womenprobs.png" />
+    <Content Include="Images\psychiatry.jpg" />
+    <Content Include="Images\Types-behavior-addictions-Hamrah.jpg" />
     <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\color-switcher.js" />
@@ -197,6 +206,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BootstrapBundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FacilitiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -234,6 +244,14 @@
     <Content Include="Views\Shared\_testimonial.cshtml" />
     <Content Include="Views\Shared\_aboutDoctor.cshtml" />
     <Content Include="Views\Shared\_Equipments.cshtml" />
+    <Content Include="Views\Facilities\Academic.cshtml" />
+    <Content Include="Views\Facilities\Addictions.cshtml" />
+    <Content Include="Views\Facilities\ChildProblem.cshtml" />
+    <Content Include="Views\Facilities\MemoryProblems.cshtml" />
+    <Content Include="Views\Facilities\Psychosomaticdisorders.cshtml" />
+    <Content Include="Views\Facilities\SexualProblems.cshtml" />
+    <Content Include="Views\Facilities\StressinRelationship.cshtml" />
+    <Content Include="Views\Facilities\WomenpsychologicalProblems.cshtml" />
     <None Include="Properties\PublishProfiles\HorizonMindCare.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -245,6 +263,35 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="HtmAsyncCodeGenLib">
+      <Guid>{717F481E-D174-49EE-A839-EE0CCF320E93}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WinHttp">
+      <Guid>{662901FC-6951-4854-9EB2-D9A2570F2B2E}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
