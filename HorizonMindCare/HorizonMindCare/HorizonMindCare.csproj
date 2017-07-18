@@ -184,6 +184,7 @@
     <Content Include="Images\Womenprobs.png" />
     <Content Include="Images\psychiatry.jpg" />
     <Content Include="Images\Types-behavior-addictions-Hamrah.jpg" />
+    <Content Include="Images\Nikhil.jpg" />
     <Content Include="Scripts\bootstrap-select.min.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\color-switcher.js" />
@@ -206,6 +207,7 @@
   <ItemGroup>
     <Compile Include="App_Start\BootstrapBundleConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\FacilitiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -253,6 +255,7 @@
     <Content Include="Views\Facilities\StressinRelationship.cshtml" />
     <Content Include="Views\Facilities\WomenpsychologicalProblems.cshtml" />
     <None Include="Properties\PublishProfiles\HorizonMindCare.pubxml" />
+    <Content Include="Views\Doctor\AboutDoctors.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
