@@ -19,18 +19,26 @@
                     <div class="collapse navbar-collapse pull-right" id="navbar">
                         <ul class="nav navbar-nav">
                             <li>
-                               
-                                <a href='/HorizonMindCare' id="about" class="active">Home  </a>
-                                @*<ul class="HorizonMindCaredropdown">
-                                    <li class=""><a href="profile.php">Our Profile</a></li>
-                                    <li class="hover"><a href="vision-mission.php">Vision &amp; Mission</a></li>
-                                    <li class=""><a href="chairman-message.php">Chairman's Message </a></li>
-                                    <li><a href="awards.php">Awards </a></li>
-                                    <li><a href="future-plans.php">Future Plans </a></li>
-                                </ul>*@
+                                <a href="@Url.Action("Index", "Home")" id="about" class="active">Home </a>
+                                @*<ul class="dropdown">
+                                        <li class=""><a href="profile.php">Our Profile</a></li>
+                                        <li class="hover"><a href="vision-mission.php">Vision &amp; Mission</a></li>
+                                        <li class=""><a href="chairman-message.php">Chairman's Message </a></li>
+                                        <li><a href="awards.php">Awards </a></li>
+                                        <li><a href="future-plans.php">Future Plans </a></li>
+                                    </ul>*@
                             </li>
                             <li>
                                 <a href="#spec" id="spec">Specialities </a>
+                                <ul class="dropdown">
+                                    <li class=""><a href="@Url.Action("WomenpsychologicalProblems", "Facilities")">Women Psychological problems</a></li>
+                                    <li class="hover"><a href="@Url.Action("ChildProblem", "Facilities")">Child and Adolescents Problems</a></li>
+                                    <li class=""><a href="@Url.Action("Academic", "Facilities")">Academic</a></li>
+                                    <li><a href="@Url.Action("MemoryProblems", "Facilities")">Memory problems</a></li>
+                                    <li><a href="@Url.Action("Addictions", "Facilities")">Addictions</a></li>
+                                    <li><a href="@Url.Action("SexualProblems", "Facilities")">Sexual problems</a></li>
+                                    <li><a href="@Url.Action("Psychosomaticdisorders", "Facilities")">Psycho-somatic disorders</a></li>
+                                 </ul>
                             </li>
                             <li>
                                 <a id="latest" href="#latest">Latest News</a>
@@ -45,18 +53,20 @@
                 <!-- Mobile Menu Start -->
                 <ul class="wpb-mobile-menu">
                     <li>
-                        <a href="#about" id="MobileAbout" class="active">Home</a>
-                        @*<ul class="dropdown">
-                            <li class=""><a href="profile.php">Our Profile</a></li>
-                            <li class="hover"><a href="vision-mission.php">Vision &amp; Mission</a></li>
-                            <li class=""><a href="chairman-message.php">Chairman's Message </a></li>
-                            <li><a href="awards.php">Awards </a></li>
-                            <li><a href="future-plans.php">Future Plans </a></li>
-                        </ul>*@
+                        <a href="@Url.Action("Index", "Home")" id="MobileAbout" class="active">Home</a>
                     </li>
 
                     <li>
                         <a href="#spec" id="spec">Specialities </a>
+                        <ul class="dropdown">
+                            <li class=""><a href="@Url.Action("WomenpsychologicalProblems", "Facilities")">Women Psychological problems</a></li>
+                            <li class="hover"><a href="@Url.Action("ChildProblem", "Facilities")">Child and Adolescents Problems</a></li>
+                            <li class=""><a href="@Url.Action("Academic", "Facilities")">Academic</a></li>
+                            <li><a href="@Url.Action("MemoryProblems", "Facilities")">Memory problems</a></li>
+                            <li><a href="@Url.Action("Addictions", "Facilities")">Addictions</a></li>
+                            <li><a href="@Url.Action("SexualProblems", "Facilities")">Sexual problems</a></li>
+                            <li><a href="@Url.Action("Psychosomaticdisorders", "Facilities")">Psycho-somatic disorders</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a id="latest" href="#latest">Latest News</a>
