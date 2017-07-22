@@ -11,8 +11,8 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="navbar-brand logo ">
-                            <h1 id="smallHeading"><img src="~/Content/img/small_logo.png" style="position:relative;top:-5px;" class="img-responsive" draggable="false" alt="Footer Logo"></h1>
-                            <h1 id="heading" class="option animated bounce"><img src="~/Content/img/logo_header.png" class="img-responsive" style="position: relative;top: -64px;left: 95px;" draggable="false" alt="Footer Logo"></h1>
+                            <a href="@Url.Action("Index", "Home")"><h1 id="smallHeading"><img src="~/Content/img/small_logo.png" style="position:relative;top:-5px;" class="img-responsive" draggable="false" alt="Footer Logo"></h1></a>
+                            <a href="@Url.Action("Index", "Home")"><h1 id="heading" class="option animated bounce"><img src="~/Content/img/logo_header.png" class="img-responsive" style="position: relative;top: -64px;left: 95px;" draggable="false" alt="Footer Logo"></h1></a>
                         </div>
                     </div>
 
@@ -20,13 +20,9 @@
                         <ul class="nav navbar-nav">
                             <li>
                                 <a href="@Url.Action("Index", "Home")" id="about" class="active">Home </a>
-                                @*<ul class="dropdown">
-                                        <li class=""><a href="profile.php">Our Profile</a></li>
-                                        <li class="hover"><a href="vision-mission.php">Vision &amp; Mission</a></li>
-                                        <li class=""><a href="chairman-message.php">Chairman's Message </a></li>
-                                        <li><a href="awards.php">Awards </a></li>
-                                        <li><a href="future-plans.php">Future Plans </a></li>
-                                    </ul>*@
+                                <ul class="dropdown">
+                                    <li class=""><a href="@Url.Action("DoctorTalk", "Home")">About Clinic</a></li>
+                                    </ul>
                             </li>
                             <li>
                                 <a href="#spec" id="spec">Specialities </a>
@@ -54,6 +50,9 @@
                 <ul class="wpb-mobile-menu">
                     <li>
                         <a href="@Url.Action("Index", "Home")" id="MobileAbout" class="active">Home</a>
+                        <ul class="dropdown">
+                            <li class=""><a href="@Url.Action("DoctorTalk", "Home")">About Clinic</a></li>
+                        </ul>
                     </li>
 
                     <li>
@@ -85,7 +84,7 @@
         <div id="first-slider">
             <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></a></li>
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                 </ol>
@@ -93,41 +92,48 @@
                 <div class="carousel-inner" role="listbox">
                     <!-- Item 1 -->
                     <div class="item active slide1 ">
-                        <div class="row">
-                            <div class="container">
-                                <div class="col-md-3 text-right">
-                                    <h4 class="option animated pulse">Women psychological problems</h4>
-                                    <h4 class="option animated pulse">Stress in relationship</h4>
-                                    <h4 class="option animated pulse">work Memory problems</h4>
-                                </div>
-                                <div class="col-md-9 text-left">
+                        <a href="@Url.Action("DoctorTalk", "Home")">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="col-md-3 text-right">
+                                        <h4 class="option animated pulse">Women psychological problems</h4>
+                                        <h4 class="option animated pulse">Stress in relationship</h4>
+                                        <h4 class="option animated pulse">work Memory problems</h4>
+                                    </div>
+                                    <div class="col-md-9 text-left">
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <!-- Item 2 -->
                     <div class="item slide2">
-                        <div class="row">
-                            <div class="container">
-                                <div class="col-md-7 text-left">
-                                    <h3 class="option animated pulse"> Child and Adolescents problems</h3>
+                        <a href="@Url.Action("DoctorTalk", "Home")">
+                            <div class="row">
+
+                                <div class="container">
+                                    <div class="col-md-7 text-left">
+                                        <h3 class="option animated pulse"> Child and Adolescents problems</h3>
+                                    </div>
+                                    <div class="col-md-5 text-right">
+                                    </div>
                                 </div>
-                                <div class="col-md-5 text-right">
-                                </div>
+
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <!-- Item 3 -->
                     <div class="item slide3">
-                        <div class="row">
-                            <div class="container">
-                                <div class="col-md-7 text-left">
-                                    <h3 class="option animated pulse">Psycho-somatic disorders</h3>
-
+                        <a href="@Url.Action("DoctorTalk", "Home")">
+                            <div class="row">
+                                <div class="container">
+                                    <div class="col-md-7 text-left">
+                                        <h3 class="option animated pulse">Psycho-somatic disorders</h3>
+                                    </div>
+                                    <div class="col-md-5 text-right"> </div>
                                 </div>
-                                <div class="col-md-5 text-right"> </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <!-- End Wrapper for slides-->
