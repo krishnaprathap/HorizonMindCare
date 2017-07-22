@@ -6,16 +6,13 @@ using System.Web.Mvc;
 
 namespace HorizonMindCare.Controllers
 {
-    public class HomeController : Controller
+    public class DoctorController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+        // GET: Doctor
+        public ActionResult AboutDoctors(int id)
         {
+            ViewBag.id = id;
             return View();
-        }
-        public ActionResult DoctorTalk()
-        {
-            return View("DoctorTalk");
         }
     }
 }
