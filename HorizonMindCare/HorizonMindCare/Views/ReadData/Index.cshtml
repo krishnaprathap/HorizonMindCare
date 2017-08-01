@@ -1,0 +1,27 @@
+﻿@model IEnumerable<HorizonMindCare.Models.News>
+
+
+<table class="table">
+       
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NewsId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ImpNews)
+        </td>
+        
+       
+    </tr>
+}
+
+</table>
+<script>
+
+    var a = document.getElementById("carousel-example-generic")
+    a.style.display = 'none';
+    var b = document.getElementById("route")
+    b.style.display = 'none';
+</script>

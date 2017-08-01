@@ -16,7 +16,7 @@
     <RootNamespace>HorizonMindCare</RootNamespace>
     <AssemblyName>HorizonMindCare</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -153,6 +153,7 @@
     <Content Include="Content\fonts\simple-line-icons.css" />
     <Content Include="Content\fonts\themify-icons.css" />
     <Content Include="Content\fonts\themify-icons\themify.svg" />
+    <Content Include="Content\hi.txt" />
     <Content Include="Content\img\banner1.jpg" />
     <Content Include="Content\img\bg\bg-intro-1.jpg" />
     <Content Include="Content\img\bg\bg-intro.jpg" />
@@ -210,9 +211,11 @@
     <Compile Include="Controllers\DoctorController.cs" />
     <Compile Include="Controllers\FacilitiesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReadDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\News.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -257,6 +260,7 @@
     <None Include="Properties\PublishProfiles\HorizonMindCare.pubxml" />
     <Content Include="Views\Doctor\AboutDoctors.cshtml" />
     <Content Include="Views\Home\DoctorTalk.cshtml" />
+    <Content Include="Views\ReadData\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -266,7 +270,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="HtmAsyncCodeGenLib">
@@ -312,7 +315,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>55294</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost/HorizonMindCare</IISUrl>
+          <IISUrl>http://localhost:55294/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
