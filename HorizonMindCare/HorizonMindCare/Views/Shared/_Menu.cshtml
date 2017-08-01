@@ -15,14 +15,13 @@
                             <a href="@Url.Action("Index", "Home")"><h1 id="heading" class="option animated bounce"><img src="~/Content/img/logo_header.png" class="img-responsive" style="position: relative;top: -64px;left: 95px;" draggable="false" alt="Footer Logo"></h1></a>
                         </div>
                     </div>
-
                     <div class="collapse navbar-collapse pull-right" id="navbar">
                         <ul class="nav navbar-nav">
                             <li>
                                 <a href="@Url.Action("Index", "Home")" id="about" class="active">Home </a>
                                 <ul class="dropdown">
                                     <li class=""><a href="@Url.Action("DoctorTalk", "Home")">About Clinic</a></li>
-                                    </ul>
+                                </ul>
                             </li>
                             <li>
                                 <a href="#spec" id="spec">Specialities </a>
@@ -34,15 +33,24 @@
                                     <li><a href="@Url.Action("Addictions", "Facilities")">Addictions</a></li>
                                     <li><a href="@Url.Action("SexualProblems", "Facilities")">Sexual problems</a></li>
                                     <li><a href="@Url.Action("Psychosomaticdisorders", "Facilities")">Psycho-somatic disorders</a></li>
-                                 </ul>
+                                </ul>
                             </li>
                             <li>
                                 <a id="latest" href="#latest">Latest News</a>
                             </li>
+                            <li><a id="contact" href="@Url.Action("ContactUs", "Home")">Contact Us</a></li>
                             <li>
-                                <a id="route" href="#routedirection">Route Direction</a>
+                                @*<div class="icon">*@
+                                    <a title="Call Us" class="icon" href="skype:kaveri.chougule27?userinfo"> <i class="ti-skype animated zoomIn" id="SkypeHeading"></i></a>
+                                @*</div>*@
+                                @*<div class="job-tag">
+                                        <div class="pull-right">
+                                            <div class="icon">
+                                                <a href="skype:kaveri.chougule27?userinfo"> <i class="ti-skype animated zoomIn" id="SkypeHeading"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>*@
                             </li>
-                            <li><a id="contact" href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -54,7 +62,6 @@
                             <li class=""><a href="@Url.Action("DoctorTalk", "Home")">About Clinic</a></li>
                         </ul>
                     </li>
-
                     <li>
                         <a href="#spec" id="spec">Specialities </a>
                         <ul class="dropdown">
@@ -70,16 +77,21 @@
                     <li>
                         <a id="latest" href="#latest">Latest News</a>
                     </li>
+                    <li><a id="contact" href="@Url.Action("ContactUs", "Home")">Contact Us</a></li>
                     <li>
-                        <a id="route" href="#routedirection">Route Direction</a>
+                        <div class="job-tag">
+                            <div class="pull-right">
+                                <div class="icon">
+                                    <a href="skype:kaveri.chougule27?userinfo"> <i class="ti-skype animated zoomIn" id="SkypeHeading"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </li>
-                    <li><a id="contact" href="#contact">Contact Us</a></li>
                 </ul>
                 <!-- Mobile Menu End -->
             </nav>
         </div>
         <!-- Header Section End -->
-
 
         <div id="first-slider">
             <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
@@ -110,7 +122,6 @@
                     <div class="item slide2">
                         <a href="@Url.Action("DoctorTalk", "Home")">
                             <div class="row">
-
                                 <div class="container">
                                     <div class="col-md-7 text-left">
                                         <h3 class="option animated pulse"> Child and Adolescents problems</h3>
@@ -118,7 +129,6 @@
                                     <div class="col-md-5 text-right">
                                     </div>
                                 </div>
-
                             </div>
                         </a>
                     </div>

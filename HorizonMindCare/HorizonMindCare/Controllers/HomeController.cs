@@ -17,5 +17,10 @@ namespace HorizonMindCare.Controllers
         {
             return View("DoctorTalk");
         }
+
+        public ActionResult ContactUs()
+        {
+            return View("ContactUs");
+        }
     }
 }

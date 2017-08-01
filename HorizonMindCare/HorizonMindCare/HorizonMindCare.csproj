@@ -239,10 +239,10 @@
     <Content Include="Content\fonts\themify-icons\themify.woff" />
     <Content Include="Content\img\dilip corel - Copy.CDR" />
     <Content Include="Content\img\dilip corel.CDR" />
-    <Content Include="Views\Shared\_Route.cshtml" />
+    <Content Include="Views\Home\ContactUs.cshtml" />
     <Content Include="Views\Shared\_contactForm.cshtml" />
     <Content Include="Views\Shared\_footer.cshtml" />
-    <Content Include="Views\Shared\_facilities.cshtml" />
+    <Content Include="Views\Shared\_showcase.cshtml" />
     <Content Include="Views\Shared\_testimonial.cshtml" />
     <Content Include="Views\Shared\_aboutDoctor.cshtml" />
     <Content Include="Views\Shared\_Equipments.cshtml" />
